@@ -23,10 +23,27 @@ It is a python package with a provided command line interface.
 4. Install the dependencies:
     ```bash
     python3 -m pip install .
+    ```
+
+## Use functionality
+
+After successfull installation the functionality can be utilized be importing the package and relevant modules.
+
+Example program, converting 'img_file.jpg' to grey version using python implementation:
+```python
+from in3110_instapy import get_filter
+from in3110_instapy.io import  read_image, write_image
+
+filter = get_filter()                        # without input - grey filter with python implementation
+img = read_image('img_file.jpg')             # read_image() takes the path to a .jpg file as input
+filtered = filter(img)     
+
+write_image(filtered, 'filtered_name.jpg')   # second input to write_image() is the path to the new filtered image
+```
 
 ## Use command line interface
 
-After successfull installation the functionality can be accessed through the command line interface that is provided:
+After successfull installation the functionality can also be accessed through the command line interface that is provided:
 
    ```bash
    instapy <file to convert> <arguments>
@@ -43,5 +60,3 @@ Here are the arguments:
                            The implementation
    ```
 (NB! cython is NOT implemented yet!!)
-
-
