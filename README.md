@@ -1,7 +1,8 @@
 # Instapy
-A python package with a provided command line interface.
 
 Instapy is an image converter that convertes your JPEG to a greyscale or sepia version.
+
+It is a python package with a provided command line interface.
 
 ## Setting Up the Project
 
