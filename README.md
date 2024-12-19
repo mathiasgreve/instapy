@@ -20,20 +20,22 @@
 
 ## Use command line interface
 
-```bash
-instapy <file to convert> <arguments>
-```
+After successfull installation the functionality can be accessed through the command line interface that is provided:
 
-```bash
-  -o, --out             The output filename
-  -g, --gray            Select gray filter
-  -se, --sepia          Select sepia filter
-  -sc, --scale
-                        Scale factor to resize image
-  -i {python,numba,numpy,cython}, --implementation {python,numba,numpy,cython}
-                        The implementation
-```
+   ```bash
+   instapy <file to convert> <arguments>
+   ```
 
-
+Here are the arguments: 
+   ```bash
+     -o, --out             The output filename
+     -g, --gray            Select gray filter
+     -se, --sepia          Select sepia filter
+     -sc, --scale
+                           Scale factor to resize image
+     -i {python,numba,numpy,cython}, --implementation {python,numba,numpy,cython}
+                           The implementation
+   ```
+(NB! cython is NOT implemented yet!!)
 
 
