@@ -77,9 +77,9 @@ def main(argv=None):
 
     # filename is positional and required
     parser.add_argument("file", help="The filename to apply filter to")
-    parser.add_argument("-o", "--out", help="The output filename")
 
     # Optional arguments
+    parser.add_argument("-o", "--out", help="The output filename")
     parser.add_argument("-g", "--gray", action="store_true", help="Select gray filter")
     parser.add_argument("-se", "--sepia", action="store_true", help="Select sepia filter")
     parser.add_argument("-sc", "--scale", type=float, default=1.0, help="Scale factor to resize image")
